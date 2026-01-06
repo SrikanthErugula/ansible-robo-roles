@@ -1,0 +1,10 @@
+- name: "setup {{ component }} server"
+  hosts: "{{ component }}"
+  become: yes
+  roles: # see in notes
+  - "{{ component }}" 
+
+  # here component lo ki manam emi ithe modules run avuthayoo avvani vastai like mongodb,redis,mysql ... all
+
+
+  #ansible-playbook -i inventory all-start-code.yaml -e "component=redis" for run 

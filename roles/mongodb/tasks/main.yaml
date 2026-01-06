@@ -1,5 +1,7 @@
 
   # IKKADA CODE COMES FROM ANSIBLE-ROBODHOP MONGODB.YAML  AFTER TASKS
+
+  #ansible-playbook -i inventory all-start-code.yaml -e "component=redis" for run 
   
   - name: copy mongodb repo # our understand name
     ansible.builtin.copy:  
