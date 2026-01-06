@@ -3,7 +3,7 @@
 - name: app setup
   ansible.builtin.import_role:
     name: for-common
-    tasks_from: app-setup.yaml
+    tasks_from: app-setup.yaml # see in for-common file its comes from there
 
 # THE ABOVE VARAKU RUN CHESTE ansible-playbook -i inventory.ini main.yaml -e "component=catalogue" 
 
@@ -16,7 +16,7 @@
 
 - name: copy mongo repo
   ansible.builtin.copy:
-    src: mongo.repo
+    src: mongo.repo # # see in  file folder  its comes from there
     dest: /etc/yum.repos.d/mongo.repo
 
 - name: install mongodb client
@@ -28,6 +28,8 @@
   ansible.builtin.command: mongosh {{ MONGODB_HOST }} --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
   register: catalogue_output
 
+# {{ MONGODB_HOST }} its comes from group_vars folder 
+
 - name: load products into mongodb
   ansible.builtin.shell: mongosh --host {{ MONGODB_HOST }} </app/db/master-data.js
   when: catalogue_output.stdout | int < 0
@@ -35,6 +37,6 @@
 - name: app setup
   ansible.builtin.import_role:
     name: common
-    tasks_from: system-setup.yaml
+    tasks_from: system-setup.yaml # see in for-common file its comes from there
   # tags:
   # - deployment
