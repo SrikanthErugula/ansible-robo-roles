@@ -4,7 +4,8 @@
   ansible.builtin.import_role:
     name: for-common
     tasks_from: app-setup.yaml # see in for-common file its comes from there
-
+  # tags:
+  # - deployment
 # THE ABOVE VARAKU RUN CHESTE ansible-playbook -i inventory.ini main.yaml -e "component=catalogue" 
 
 - name: app setup
