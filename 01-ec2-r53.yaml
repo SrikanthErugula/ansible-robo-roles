@@ -14,9 +14,9 @@
     - redis 
     - mysql 
     - rabbitmq
-    # - user
-    # - cart
-    # - catalogue
+    - user
+    - cart
+    - catalogue
     # - shipping
     # - payment
     # - frontend
