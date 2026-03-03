@@ -1,4 +1,4 @@
-MONGODB_HOST: mongodb.dsoaws.fun   
+# MONGODB_HOST: mongodb.dsoaws.fun   
 
 # this value is set in grp_vars lo for all yaml lo 
 ## ee value ni task lo vunde main lo call cheyachu with MONGODB_HOST 
