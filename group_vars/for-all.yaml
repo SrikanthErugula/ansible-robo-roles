@@ -1,4 +1,4 @@
-MONGODB_HOST: mmongodb.dsoaws.fun
+MONGODB_HOST: mongodb.dsoaws.fun
 REDIS_HOST: redis.dsoaws.fun
 CATALOGUE_HOST: catalogue.dsoaws.fun
 CART_HOST: cart.dsoaws.fun

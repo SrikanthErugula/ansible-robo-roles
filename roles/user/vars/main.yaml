@@ -4,5 +4,5 @@
 
 # SPECIFIC_VAR: specific-value
 
-MONGODB_HOST: mmongodb.dsoaws.fun
+MONGODB_HOST: mongodb.dsoaws.fun
 REDIS_HOST: redis.dsoaws.fun
