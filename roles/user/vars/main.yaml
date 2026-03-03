@@ -3,3 +3,6 @@
 # future lo vaste we can override here 
 
 # SPECIFIC_VAR: specific-value
+
+MONGODB_HOST: mmongodb.dsoaws.fun
+REDIS_HOST: redis.dsoaws.fun
